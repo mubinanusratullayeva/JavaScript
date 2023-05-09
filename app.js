@@ -43,9 +43,12 @@ console.log(`Borish kelish samalyot bileti: ${prii.forTicket} so'm`);
 console.log(`Mehmonxona to'lovi (to'liq safar davomiyligi uchun): ${prii.forHotel} so'm`);
 console.log(`Muzey va ko'ngil ochar joylar uchun: ${prii.forTravelling} so'm`);
 
+let foo = prii.forHotel + prii.forTicket + prii.forTravelling;
+
+console.log(`umumiy sarf xarajatlar: ${foo}`);
+
 if (mon >= prii.forHotel + prii.forTicket + prii.forTravelling) {
     console.log('Oq yo`l Alisher');
 }else{
-    let foo = prii.forHotel + prii.forTicket + prii.forTravelling
     console.log(`Alisher, ozgina sabr qiling pulingiz ${foo - mon} yetmadi`);
 }
