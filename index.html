@@ -5,26 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>JavaScript</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
     
 
-    <!-- JS LESSON-3 by HTML -->
+    <!-- JS LESSON-3 -->
      
-    <form action="#">
-        <input type="number" placeholder="Enter the number">
+    <div class="container">
+        <form class="val" action="#">
+            <input class="num" type="number" placeholder="Enter the number">
+    
+            <select class="cur" value="">
+                <option value="currency" disabled selected>Currency</option>
+                <option class="usd" value="usd">usd</option>
+                <option class="rubl" value="rubl">ruble</option>
+                <option class="euro" value="euro">euro</option>
+            </select>
+    
+            <button type="submit">Submit</button>
+        </form> 
+    </div>
 
-        <select>
-            <option value="currency" selected>Currency</option>
-            <option value="usd">usd</option>
-            <option value="rubl">ruble</option>
-            <option value="euro">euro</option>
-        </select>
-
-        <button type="submit">Submit</button>
-    </form> 
-
-      <p class="bar"></p>
+      <p class="bar">MoneyGramm</p>
 
     <script src="./app.js"></script>
 </body>

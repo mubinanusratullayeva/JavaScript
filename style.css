@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    max-width: 1215px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* JS LESSON-3 */
+
+.val{
+    padding-top: 20px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.val > input, select, select > option, button{
+    padding: 5px;
+    outline: none;
+    border: 3px solid #000000;
+}
+
+.bar{
+    padding-top: 100px;
+    text-align: center;
+    color: #000000;
+    font-size: x-large;
+}
