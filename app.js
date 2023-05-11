@@ -29,26 +29,28 @@
 
 //JS LESSON-2
 
-let mon = +prompt('Chet elga sayohat uchun qancha pulingiz bor?');
+// let mon = +prompt('Chet elga sayohat uchun qancha pulingiz bor?');
 
-let arr = [Math.ceil(11000.34), Math.ceil(12354.03)];
+// let arr = [Math.ceil(11000.34), Math.ceil(12354.03)];
 
-let prii = {
-    forTicket: 500 * arr[0],
-    forHotel: 250 * arr[0],
-    forTravelling: 120 * arr[1] 
-}
+// let prii = {
+//     forTicket: 500 * arr[0],
+//     forHotel: 250 * arr[0],
+//     forTravelling: 120 * arr[1] 
+// }
 
-console.log(`Borish kelish samalyot bileti: ${prii.forTicket} so'm`);
-console.log(`Mehmonxona to'lovi (to'liq safar davomiyligi uchun): ${prii.forHotel} so'm`);
-console.log(`Muzey va ko'ngil ochar joylar uchun: ${prii.forTravelling} so'm`);
+// console.log(`Borish kelish samalyot bileti: ${prii.forTicket} so'm`);
+// console.log(`Mehmonxona to'lovi (to'liq safar davomiyligi uchun): ${prii.forHotel} so'm`);
+// console.log(`Muzey va ko'ngil ochar joylar uchun: ${prii.forTravelling} so'm`);
 
-let foo = prii.forHotel + prii.forTicket + prii.forTravelling;
+// let foo = prii.forHotel + prii.forTicket + prii.forTravelling;
 
-console.log(`umumiy sarf xarajatlar: ${foo}`);
+// console.log(`umumiy sarf xarajatlar: ${foo}`);
 
-if (mon >= prii.forHotel + prii.forTicket + prii.forTravelling) {
-    console.log('Oq yo`l Alisher');
-}else{
-    console.log(`Alisher, ozgina sabr qiling pulingiz ${foo - mon} yetmadi`);
-}
+// if (mon >= prii.forHotel + prii.forTicket + prii.forTravelling) {
+//     console.log('Oq yo`l Alisher');
+// }else{
+//     console.log(`Alisher, ozgina sabr qiling pulingiz ${foo - mon} yetmadi`);
+// }
+
+
