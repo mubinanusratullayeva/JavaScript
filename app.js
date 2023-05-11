@@ -52,3 +52,5 @@
 // }else{
 //     console.log(`Alisher, ozgina sabr qiling pulingiz ${foo - mon} yetmadi`);
 // }
+
+
