@@ -84,9 +84,11 @@ foo.addEventListener('submit', (event) =>  {
    }else if (cur.value === rubl.value) {
     let rub = inp * 149.13
     bar.textContent = `${rub} sum`
-   } else {
+   }else if (cur.value == euro.value) {
     let yev = inp * 12354.03
     bar.textContent = `${yev} sum`
+   }else{
+    cur.classList.toggle('redb')
    }
 
 })
