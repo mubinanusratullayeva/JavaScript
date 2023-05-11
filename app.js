@@ -1,7 +1,3 @@
-'use strict';
-
-//JS LESSON-1
-
 // let userName = prompt('Enter your name');
 // let age = +prompt('Enter your age');
 // let country = prompt('where are you from?');
@@ -21,6 +17,3 @@
 // console.log(object.country);
 // console.log(object.dev);
 // console.log(object.stu);
-
-
-
