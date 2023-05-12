@@ -62,7 +62,7 @@
 
 
 
-//JS LESSON-3
+// //JS LESSON-3
 
 const foo = document.querySelector('.val'),
        num = document.querySelector('.num'),
