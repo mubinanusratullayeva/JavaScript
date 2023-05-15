@@ -62,33 +62,61 @@
 
 
 
-//JS LESSON-3
+// //JS LESSON-3
 
-const foo = document.querySelector('.val'),
-       num = document.querySelector('.num'),
-       cur = document.querySelector('.cur'),
-       usd = document.querySelector('.usd'),
-       rubl = document.querySelector('.rubl'),
-       euro = document.querySelector('.euro'),
-       bar = document.querySelector('.bar');
+// const foo = document.querySelector('.val'),
+//        num = document.querySelector('.num'),
+//        cur = document.querySelector('.cur'),
+//        usd = document.querySelector('.usd'),
+//        rubl = document.querySelector('.rubl'),
+//        euro = document.querySelector('.euro'),
+//        bar = document.querySelector('.bar');
 
 
-foo.addEventListener('submit', (event) =>  {
-    event.preventDefault()
+// foo.addEventListener('submit', (event) =>  {
+//     event.preventDefault()
 
-    let inp = +num.value
+//     let inp = +num.value
 
-   if (cur.value === usd.value) {
-    let dol = inp * 11465;
-       bar.textContent = `${dol} sum`
-   }else if (cur.value === rubl.value) {
-    let rub = inp * 149.13
-    bar.textContent = `${rub} sum`
-   }else if (cur.value == euro.value) {
-    let yev = inp * 12354.03
-    bar.textContent = `${yev} sum`
-   }else{
-    cur.classList.toggle('redb')
-   }
+//    if (cur.value === usd.value) {
+//     let dol = inp * 11465;
+//        bar.textContent = `${dol} sum`
+//    }else if (cur.value === rubl.value) {
+//     let rub = inp * 149.13
+//     bar.textContent = `${rub} sum`
+//    }else if (cur.value == euro.value) {
+//     let yev = inp * 12354.03
+//     bar.textContent = `${yev} sum`
+//    }else{
+//     cur.classList.toggle('redb')
+//    }
 
+// })
+
+
+
+
+
+
+
+
+//JS LESSON-4
+
+let elLetter = document.querySelector('.letter')
+let elSend = document.querySelector('.send')
+
+let MumLetter = 'Hello Mum'
+let FriendLetter = "Hello Friend"
+
+
+elLetter.addEventListener('change', (a) => {
+          a.preventDefault();
+
+    let selectValue = elSelect.value
+
+    if(selectValue == 'friend'){
+        elSend.value = MumLetter 
+    }else if(selectValue == 'mom') {
+        elSend.value = FriendLetter
+    }
 })
