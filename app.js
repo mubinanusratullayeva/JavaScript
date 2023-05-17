@@ -102,21 +102,79 @@
 
 //JS LESSON-4
 
-let elLetter = document.querySelector('.letter')
-let elSend = document.querySelector('.send')
+// let elLetter = document.querySelector('.letter')
+// let elSend = document.querySelector('.send')
 
-let MumLetter = 'Hello Mum'
-let FriendLetter = "Hello Friend"
+// let MumLetter = 'Hello Mum'
+// let FriendLetter = "Hello Friend"
 
 
-elLetter.addEventListener('change', (a) => {
-          a.preventDefault();
+// elLetter.addEventListener('change', (a) => {
+//           a.preventDefault();
 
-    let selectValue = elSelect.value
+//     let selectValue = elSelect.value
 
-    if(selectValue == 'friend'){
-        elSend.value = MumLetter 
-    }else if(selectValue == 'mom') {
-        elSend.value = FriendLetter
+//     if(selectValue == 'friend'){
+//         elSend.value = MumLetter 
+//     }else if(selectValue == 'mom') {
+//         elSend.value = FriendLetter
+//     }
+// })
+
+
+
+
+
+
+
+
+//JS LESSON-5
+
+const foo = document.querySelector('.tempreture'),
+      bar = document.querySelector('.tempreture__temp'),
+      firstInput = document.querySelector('.rain'),
+      secondInput = document.querySelector('.carridor'),
+      yes = document.querySelector('.yes'),
+      no = document.querySelector('.no');
+
+
+foo.addEventListener('submit', (event) => {
+        event.preventDefault();
+            
+    let barValue = Number(bar.value)
+
+        if(barValue < 30 && barValue > 5){
+         yes.style.color = 'green'   
+         no.style.color = 'black'
+        }else{
+         yes.style.color = 'black'
+         no.style.color = 'red'
+        }
+})
+
+firstInput.addEventListener('click', ()=> {
+
+    if(firstInput.checked){
+        yes.style.color = 'black'
+         no.style.color = 'red'
+    }else{
+        yes.style.color = 'green'   
+         no.style.color = 'black'
+    }
+})
+
+secondInput.addEventListener('click', ()=> {
+    if(firstInput.checked && secondInput.checked && (barValue < 30 && barValue > 5)-0){
+        yes.style.color = 'green'   
+        no.style.color = 'black'
+    }else if(firsInput.checked){
+        yes.style.color = 'green'   
+        no.style.color = 'black'
+    }else if(barValue < 5 && secondInput.checked){
+        yes.style.color = 'black'
+         no.style.color = 'red'
+    }else{
+        yes.style.color = 'green'   
+         no.style.color = 'black'
     }
 })
